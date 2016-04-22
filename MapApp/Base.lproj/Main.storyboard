@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EWr-UY-ccV">
+                                <rect key="frame" x="20" y="683" width="46" height="36"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.05069557715250339" green="1" blue="0.71663053673080523" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="定位"/>
+                                <connections>
+                                    <action selector="getCurrentLocation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZKD-Gd-0fE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cbJ-XJ-Dd8">
+                                <rect key="frame" x="210" y="680" width="46" height="36"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.94887762396606234" blue="0.15308954621336446" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="普通"/>
+                                <connections>
+                                    <action selector="nomalBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DX9-Te-bf2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SoH-xh-oQW">
+                                <rect key="frame" x="284" y="680" width="46" height="36"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.94887762399999998" blue="0.15308954620000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="卫星"/>
+                                <connections>
+                                    <action selector="hybridBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0W6-4q-XVB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUt-eO-Dde">
+                                <rect key="frame" x="348" y="680" width="46" height="36"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.94887762399999998" blue="0.15308954620000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="混合"/>
+                                <connections>
+                                    <action selector="hybridFlyoverBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DOH-cG-X5f"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zxd-gw-WSG">
+                                <rect key="frame" x="20" y="28" width="157" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.065149630436328265" green="1" blue="0.72696996975065931" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDp-9E-UBL">
+                                <rect key="frame" x="210" y="25" width="46" height="36"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.085656347138221567" green="1" blue="0.55245404441339119" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="搜索"/>
+                                <connections>
+                                    <action selector="searchBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hn7-So-7mp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jWx-G5-HjY">
+                                <rect key="frame" x="348" y="17" width="46" height="36"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.033802964503210298" green="1" blue="0.49172937011936191" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="放大"/>
+                                <connections>
+                                    <action selector="bigBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b5V-g8-2xM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wov-Vc-sDW">
+                                <rect key="frame" x="348" y="78" width="46" height="36"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.033802964499999998" green="1" blue="0.49172937010000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="缩小"/>
+                                <connections>
+                                    <action selector="smallBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y2q-r8-P5w"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVs-4M-HpU">
+                                <rect key="frame" x="341" y="566" width="60" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.071637561242913761" green="1" blue="0.67038102778050623" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="位置共享"/>
+                                <connections>
+                                    <action selector="shareLocationBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sQd-y8-PtW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="cityNameTF" destination="zxd-gw-WSG" id="gAU-4I-K4H"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="243" y="188"/>
+        </scene>
+    </scenes>
+</document>
